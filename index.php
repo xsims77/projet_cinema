@@ -1,12 +1,19 @@
-<!-- Chargement de l'entête ainsi que la balise ouvrante du body -->
-<?php require __DIR__ . "/components/head.php";
+<?php 
+    //Définition du titre spécifique à la page
+    $title = "Page d'accueil";
 ?>
+<?php 
+ //Chargement de l'entête ainsi que la balise ouvrante du body
+require __DIR__ . "/components/head.php";
+?>
+
 <!-- Chargement de la barre de navigation -->
 <?php require __DIR__ . "/components/nav.php"; ?>
-<main>
-    <h1 class="text-center">hello World!</h1>
-
-
+<main class="container">
+    <h1 class="text-center display-5 my-3">Liste des films</h1>
+    <div class="d-flex justify-content-end align-items-center">
+        <a href="create.php" class="btn btn-primary my-3 display-5">Nouveau film</a>
+    </div>
 
 </main>
 
