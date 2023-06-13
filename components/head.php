@@ -30,7 +30,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-
+    
+    <?= isset($font_awesome) ? $font_awesome : ''; ?>
+    
 
     <link rel="stylesheet" href="styles/apps.css">
 </head>
